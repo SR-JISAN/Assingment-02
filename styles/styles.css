@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     background: rgb(245, 248, 255);
+    font-family: "Inter", sans-serif;
+    margin: 0;
 } 
 /* ------------repeat-style------------ */
 .font-family{
@@ -9,13 +11,11 @@
 .set-width{
     margin: 0 auto;
     max-width: 1140px;
-
 }
 
 
 /* ----------------------nav-bar */
 .nav-bar{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +64,37 @@
     text-decoration: none;
 }
 
+/* -----------------------banner-------------- */
+.banner-container{
+    display: flex;
+    align-items: end;
+    border: 1px solid red;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-content-header{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(233, 90, 8);
+    margin: 10px 0;
+}
+#header-spacial{
+    color: rgb(0, 0, 0);
+}
+.banner-content>p{
+    color: rgba(0, 0, 0, 0.5);
+    width: 76%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.banner-img{
+   width: 50%; 
+}
+.banner-img img{
+    width: 100%;
+}
+
 
 /* -------------------Responsive-site-------- */
 
@@ -71,14 +102,33 @@
 /* for-mobile-device---------------- */
 @media screen and (max-width:576px){
     /* -------------navbar----------------- */
-    /* .nav-img img{
-    width: auto;
-    } */
+    .nav-bar{
+        width: 90%;
+        margin: auto;
+    }
+    .nav-img img{
+    width: 80%;
+    }
     .nav-section{
         display: none;
     }
     #cart>a>img{
     width: auto;
-}
+   }
 
+/* ---------------banner--------------- */
+   .banner-container{
+    flex-direction: column-reverse;
+    }
+    .banner-img{
+        width: 100%;
+        margin-bottom: 28px;
+    }
+    .banner-content{
+        width: 92%;
+        margin: auto;
+    }
+    .banner-content>p{
+        width: 100%;
+    }
 }
