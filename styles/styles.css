@@ -68,7 +68,7 @@
 .banner-container{
     display: flex;
     align-items: end;
-    border: 1px solid red;
+    margin-bottom: 120px;
 }
 .banner-content{
     width: 50%;
@@ -94,6 +94,76 @@
 .banner-img img{
     width: 100%;
 }
+
+
+/* <!-- -----------------------plant---------------- --> */
+.plant-container{
+    margin-bottom: 200px;
+}
+.plant-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.plant-head>h1{
+    color: rgb(233, 90, 8);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+#plant-spacial{
+    color: rgb(0, 0, 0);
+}
+.plant-head>p{
+    width: 65%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+/* ------------plant---card------------ */
+.plant-card{
+    width: 100%;
+}
+.card-image{
+    width: 100%;
+}
+.card-image>img{
+    width: 100%;
+}
+.card-content{
+        text-align: center;
+        margin-top: 16px;
+}
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.card-content>h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(17, 17, 17);
+}
+.card-content>p{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.plant-btn{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 90, 8);
+    padding: 0.875rem 5.625rem;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
 
 
 /* -------------------Responsive-site-------- */
@@ -128,7 +198,29 @@
         width: 92%;
         margin: auto;
     }
+    .banner-content-header{
+        font-size: 2.6rem;
+    }
     .banner-content>p{
         width: 100%;
+        font-size: 1rem;
     }
+
+    /* <!-- -----------------------plant---------------- --> */
+    .plant-head>p{
+    width: 87%;
+    font-size: 1rem;
+    }
+    .plant-container{
+    width: 92%;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.plant-btn{
+    padding: 14px 50px;
+}
+
+
+
 }
