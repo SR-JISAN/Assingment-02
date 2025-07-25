@@ -183,6 +183,7 @@
     left: 405px;
     background: none;
     animation: spin 4s linear infinite;
+    filter: drop-shadow(-4px 3px 4px  lab(0% 0 0 / 0.25));
 }
 @keyframes spin{
     0% {
@@ -194,7 +195,7 @@
     
 }
 .badge-content>h2{
-    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -233,31 +234,32 @@
     padding: 50px 65px;
     border-radius: 5px;
     text-align: center;
-    background-image: url(../image/deal-bloom.png);
-    filter: brightness(80%);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/deal-bloom.png');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 .img-2{
     grid-area: img-2;
     text-align: center;
     padding: 50px 65px;
     border-radius: 10px;
-    background-image: url(../image/deal-ana.png);
-    filter: brightness(70%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../image/deal-ana.png');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .img-3{
     grid-area: img-3;
-    padding: 50px 65px;
-    background: url(../image/deal-zabo.png);
-    filter: brightness(78%);    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../image/deal-zabo.png');
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     border-radius: 15px;
-    padding-top: 200px;
+    padding: 50px 65px;
+    
 }
 .img-1>h3{
     font-size: 20px;
@@ -272,6 +274,7 @@
     background: none;
 }
 .img-3>h3{
+    margin-top: 100px;
     font-size: 25px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -307,6 +310,8 @@
     margin-bottom: 50px;
     background-image: url(../image/news-letter-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 533px;
     text-align: center;
     align-items: center;
@@ -458,10 +463,19 @@
     margin: auto;
     gap: 13px;
    }
+.deals-btn{
+    padding: 12px  73px;
+   }
+.img-3>h3 {
+    font-size: 22px;
+    margin-top: 80px;
+}
+
 .deals-head {
     margin-bottom: 47px;
+    margin-top: 100px;
 }
-   .deals-head>p {
+.deals-head>p {
     font-size: 16px;
     width: 73%;
 }
